@@ -1,6 +1,6 @@
 # alfred-ec2
 
-An [Alfred](https://www.alfredapp.com) workflow to query for EC2 instances by tag and retrieve its private ip address. Type `ec2ls` in Alfred to get a list of instances.
+An [Alfred](https://www.alfredapp.com) workflow to query for EC2 instances by tag and SSH into the instance using its private IP address. Type `ec2ls` in Alfred to get a list of instances.
 
 ## Dependencies
 - [iTerm2 3.0+](https://www.iterm2.com/downloads.html) (not backwards compatible)
@@ -13,7 +13,15 @@ This script makes use of
 [deanishe/alfred-workflow](https://github.com/deanishe/alfred-workflow) and
 [boto/boto](https://github.com/boto/boto).
 
-To setup, go to the workflow directory and execute the script `setup.sh`.
+To setup:
+1) Clone this repo in Alfred's workflow directory (typically ~/Documents/Alfred.alfredpreferences/workflows)
+```
+git clone git@github.com:SoMuchToGrok/alfred-ec2.git ~/Documents/Alfred.alfredpreferences/workflows
+```
+2) Execute setup.sh to install python dependencies.
+```
+~/Documents/Alfred.alfredpreferences/workflows/ec2-alfred-workflow/setup.sh
+```
 
 To access AWS, it will use the credentials stored under `~/.aws/config`. You
 can use the command `awsprofile` in Alfred to select which account to use. Also use
