@@ -13,7 +13,6 @@ This script makes use of
 [deanishe/alfred-workflow](https://github.com/deanishe/alfred-workflow) and
 [boto/boto](https://github.com/boto/boto).
 
-To setup:
 1) Clone this repo in Alfred's workflow directory (typically ~/Documents/Alfred.alfredpreferences/workflows)
 ```
 git clone git@github.com:SoMuchToGrok/alfred-ec2.git ~/Documents/Alfred.alfredpreferences/workflows
